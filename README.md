@@ -85,3 +85,6 @@ colab + google drive integration
 The code is designed to run in a google colab jupyter notebook enviornment. Since colab runs using a virtual machine, it should be able to run on any machine capable of running colab in the browser.
 All the dependencies should install via the "import" instructions in the code. 
 These sections need to be run first in order for everything to work seamlessly- this is taken care of by running the sections in order. The current version of the code requires the images to be housed in a google drive with permission given to access them. The colab instance should prompt the user to allow access the first time that section of the notebook is run.
+
+# License
+This project is using the GPL ( GNU General Public License ). 
