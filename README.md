@@ -66,7 +66,7 @@ If you wish to download the data from the images you've run analysis on as a csv
 If you wish to use this software tool for your own arbitrary images beyond those it was originally tuned for, certain parameters may be useful to adjust. In principle, these include: 
 RADIUS_FROM_EDGE, which can be changed to alter the definition of the width of the edge of your colonies, measured in pixels. If your image is a different size or resolution this should definately be adjusted accordingly. 
 
-SCALE_BAR_LENGTH_UM, which should be changed to reflect the length of your scale bar. Note that only white scale bars are currently supported, and it is benefecial to the software to have a scale bar that does not overlap with regions you wish to analyse. 
+SCALE_BAR_LENGTH_UM, which should be changed to reflect the length of your scale bar. Note that only white scale bars are currently supported, and it is beneficial to the software to have a scale bar that does not overlap with regions you wish to analyse. 
 
 MAX_BRIDGE_RADIUS, which can be used to prevent the software from interpreting cut-off regions as edges. This is located and used in the function "bridge_gaps_on_edges".
 
@@ -74,6 +74,7 @@ MAX_BRIDGE_RADIUS, which can be used to prevent the software from interpreting c
 
 DEBUG_MODE can be set to True to output a more comprehensive set of intermediately processsed images, if needed. It may help to have an understanding of image processing software in order to use this, and the other parameters, most efficiently.
 
+Images for analysis may in theory include only the green channel, but it is beneficial to include a second channel (e.g. actin - red) to help the software identify the boundary of the colony, and this is highly reccomended to avoid inconsistency.
 
 # Dependencies
 OpenCV2 (python)
