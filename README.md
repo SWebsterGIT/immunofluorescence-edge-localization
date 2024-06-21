@@ -77,15 +77,17 @@ DEBUG_MODE can be set to True to output a more comprehensive set of intermediate
 Images for analysis may in theory include only the green channel, but it is beneficial to include a second channel (e.g. actin - red) to help the software identify the boundary of the colony, and this is highly reccomended to avoid inconsistency.
 
 # Dependencies
-OpenCV2 (python)
-matplotlb (python)
-numpy (python)
-pandas (python) - for csv exports only
-colab + google drive integration
+- OpenCV2 (python)
+- matplotlb (python)
+- numpy (python)
+- pandas (python) - for csv exports only
+- colab + google drive integration
 
 The code is designed to run in a google colab jupyter notebook enviornment. Since colab runs using a virtual machine, it should be able to run on any machine capable of running colab in the browser.
 All the dependencies should install via the "import" instructions in the code. 
 These sections need to be run first in order for everything to work seamlessly- this is taken care of by running the sections in order. The current version of the code requires the images to be housed in a google drive with permission given to access them. The colab instance should prompt the user to allow access the first time that section of the notebook is run.
+
+This code can also be run locally with a local installation of python. For this, make sure to use a version of python that supports all the packages in the requirements.txt. Python 3.12 or newer is recomended. To install the required packages and run the script locally, download immunofluorescence-edge-localization.py and requirements.txt, and run: 'pip install -r requirements.txt'. The script can then be run directly by a local python interpreter.
 
 # License
 This project is using the GPL ( GNU General Public License ). 
