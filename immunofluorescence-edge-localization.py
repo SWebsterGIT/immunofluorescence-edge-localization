@@ -5,7 +5,7 @@ import pandas as pd
 
 
 # Enter path to target image for analysis
-path = 'KRT8-MOCK (3).tiff'
+path = 'KRT8-MOCK.tiff'
 
 # Place your preferred image name here if you wish to export your data in a csv
 image_name = 'numa-inf'
